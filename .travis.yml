@@ -10,5 +10,7 @@ deploy:
   provider: heroku
   api_key: $HEROKU_API_KEY
   app: darshil
-  run: python3 manage.py migrate
+  run: 
+    - python3 manage.py migrate
+    - git add .
   on: master
