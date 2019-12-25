@@ -11,6 +11,6 @@ deploy:
   api_key: $HEROKU_API_KEY
   app: darshil
   run: 
+    - git checkout .pyc
     - python3 manage.py migrate
-    - git add .
   on: master
