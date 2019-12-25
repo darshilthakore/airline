@@ -2,13 +2,13 @@ language: python
 python:
     - 3.6
 install:
-    - pip install -r requirements.txt
+    - pip3 install -r requirements.txt
 script:
-    - python manage.py test
+    - python3 manage.py test
 
 deploy:
   provider: heroku
   api_key: $HEROKU_API_KEY
   app: darshil
-  run: python manage.py migrate
+  run: python3 manage.py migrate
   on: master
