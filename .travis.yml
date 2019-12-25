@@ -9,6 +9,6 @@ script:
 deploy:
   provider: heroku
   api_key: $HEROKU_API_KEY
-  app: APP
+  app: darshil
   run: python manage.py migrate
   on: master
